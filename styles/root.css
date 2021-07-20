@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --fancy-font: 'Lobster', cursive;
+    --light-bg: #fff;
+    --light-bg-color: #000;
+    --dark-bg: #181818;
+    --dark-bg-2:#081b33;
+    --dark-bg-color: #fff;
+    --highlight-color: #d8084e;
+    --highlight-color-light: #b4043fcb;
+    --clr-light-yellow: #febd01;
+    --clr-light-blue: #009ffc;
+    /* Reminder app Css */
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(162, 61%, 89%);
+    --clr-primary-2: hsl(162, 60%, 78%);
+    --clr-primary-3: hsl(162, 61%, 67%);
+    --clr-primary-4: hsl(162, 61%, 57%);
+    /* primary/main color */
+    --clr-primary-5: hsl(83, 97%, 37%);
+    /* lighter shades of primary color */
+    --clr-primary-6: #1aa179;
+    --clr-primary-7: #13795b;
+    --clr-primary-8: #0d503c;
+    --clr-primary-9: #06281e;
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(212, 33%, 89%);
+    --clr-grey-2: hsl(210, 31%, 80%);
+    --clr-grey-3: hsl(211, 27%, 70%);
+    --clr-grey-4: hsl(209, 23%, 60%);
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(208, 80%, 47%);
+    --clr-grey-7: hsl(209, 34%, 30%);
+    --clr-grey-8: #001019;
+    --clr-grey-9: hsl(209, 61%, 16%);
+    --clr-white: #fff;
+    --clr-red-light: rgb(255, 43, 43);
+    --clr-red-dark: rgb(255, 0, 0);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-black: #222;
+    --clr-dark-blue:#0a2540;
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 10px 15px #13101091,-5px 0px 15px #0f0f0f91;
+    --shadow: 0 5px 15px hsl(234, 98%, 22%);
+    --max-width: 1170px;
+    --fixed-width: 450px;
+    --clr-pink: #bd1664;
+
+    --transition: 0.5s;
+    /* review app bg */
+    --clr-drk-gradient: linear-gradient(75deg, #b90642, #36454f, #29a8ab);
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--dark-bg-color);
+}
+
+::selection {
+    background-color: var(--highlight-color);
+    color: var(--clr-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+.noStyle {
+    text-decoration: none;
+    color: #000;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.link {
+    color: rgb(11, 68, 238);
+}
+
+.titleHead {
+    letter-spacing: 1.2px;
+}
+
+.icons {
+    color: var(--highlight-color);
+    font-size: 4rem;
+}
+
+.smooth {
+    transition: all 5s linear;
+}
+
+.center {
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+.dark-bg-2{
+    background-color: var(--dark-bg-2);
+   
+}
+.dark-bg-2-text{
+     color: #06b3b3;
+}
+.highlight-clr{
+    color: var(--clr-light-yellow);
+}
+.center-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.has-bg {
+    background-color: var(--clr-grey-8);
+}
+
+.my-2 {
+    margin-bottom: 4rem;
+}
+.p-2{
+    padding: 2rem;
+}
+.margin-top-50{
+    margin-top: 5rem;
+}
+.grid-responsive-small {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    /* gap: 2rem; */
+    text-align: center;
+}
+
+.grid-responsive {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+.flex-row-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+}
+.align-center{
+    display: flex;
+    align-items: center;
+    
+}
+@media (min-width:768px){
+   
+}
